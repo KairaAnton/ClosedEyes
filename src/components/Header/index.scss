@@ -1,0 +1,44 @@
+.header{  
+    position: relative; 
+
+    &__container{
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right-container{
+        display: flex;
+
+    }
+
+    
+}
+
+@media only screen and (max-width:1440px){
+    .header{
+    &__right-container{
+        //display: none;
+    }}
+}
+
+@media only screen and (max-width:1024px){
+    .header{
+    &__right-container{
+        //display: none;
+    }}
+}
+@media only screen and (max-width:768px){
+    .header{
+
+       
+    &__right-container{
+        display: none;
+    }}
+}
+@media only screen and (max-width:375px){
+    .header{
+    &__right-container{
+        display: none;
+    }}
+}

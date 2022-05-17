@@ -1,0 +1,39 @@
+.layout{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/BackHome.png");
+    background-size: 100% 100%;
+    //background-color: rgba(#000000, $alpha:.25);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+
+@media only screen and (max-width:1440px) {
+    .layout{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+  
+  @media only screen and (max-width:1024px) {
+    .layout{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .layout{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  @media only screen and (max-width:375px) {
+    .layout{
+        width: 100%;
+        height: 100%;
+    }
+  }

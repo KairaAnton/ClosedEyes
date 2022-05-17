@@ -1,0 +1,38 @@
+.language{
+    margin: 40px 96px 0 224px;
+}
+
+.language span{
+    cursor: pointer;
+}
+
+.language-container{
+    visibility: hidden;
+    
+}
+
+
+@media only screen and (max-width:1440px) {
+    .language{
+        margin: 33px 70px 0 170px;
+    }
+}
+
+  
+  @media only screen and (max-width:1024px) {
+    .language{
+        margin: 31px 48px 0 56px;
+
+    }
+  }
+  
+  @media only screen and (max-width:992px) {
+    .language{
+    
+
+        
+    }    }
+  
+  @media only screen and (max-width:375px) {
+   
+  }

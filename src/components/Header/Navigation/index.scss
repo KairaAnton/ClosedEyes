@@ -1,0 +1,140 @@
+.navigation {
+  &__search {
+    border: none;
+    background: none;
+    margin: 31px 48px 0 0;
+  }
+
+  &__nav-container {
+    display: flex;
+  }
+
+
+  &__add-name {
+    display: none;
+    position: absolute;
+    left: 40px;
+    bottom: 32px;
+  }
+
+  &__language {
+    display: none;
+  }
+
+  &__span {
+    white-space: nowrap;
+    border-top: 4px solid rgba($color: #ffffff, $alpha: 0);
+    padding-top: 36px;
+    margin: 0 36px;
+  }
+
+  &__span:hover {
+    cursor: pointer;
+    border-top: 4px solid rgba($color: #ffffff, $alpha: 1);
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .navigation {
+    &__span {
+      border-top: 4px solid rgba($color: #ffffff, $alpha: 0);
+      padding-top: 28px;
+      margin: 0 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation {
+    &__span {
+      border-top: 4px solid rgba($color: #ffffff, $alpha: 0);
+      padding-top: 27px;
+      margin: 0 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: flex;
+    position: relative;
+    transition: all;
+
+    &__nav-menu-active::before {
+      transform: rotate(45deg);
+      bottom: 0;
+    }
+
+    &__nav-menu-active::after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    &__nav-menu-active span {
+      display: none;
+    }
+
+    &__language {
+      display: inline-block;
+    }
+
+    &__nav-container {
+      display: none;
+      transition: all 0.7s;
+    }
+
+    &__nav-menu {
+      display: inline-block;
+      width: 32px;
+      height: 11px;
+      position: relative;
+      transition: all 0.7s;
+      margin-bottom: 3px;
+    }
+
+    &__nav-menu span {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+      bottom: 5px;
+      left: 0;
+    }
+
+    &__nav-container-active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      border-radius: 5px;
+      top: 70%;
+      background-color: red;
+    }
+
+    &__nav-menu::before,
+    &__nav-menu::after {
+      content: "";
+      position: absolute;
+      transition: all 0.7s;
+      height: 1px;
+      width: 100%;
+      background-color: #ffffff;
+      left: 0;
+    }
+
+    &__nav-menu::before {
+      top: 1px;
+    }
+
+    &__nav-menu::after {
+      bottom: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navigation {
+    &__search {
+      margin: 60px 32px 0 0;
+    }
+  }
+}

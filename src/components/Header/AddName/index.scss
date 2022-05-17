@@ -1,0 +1,36 @@
+.add-name{
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:1440px) {
+    .add-name{
+        margin-top: 32px;
+        font-size: 12px;
+    }
+}
+
+  
+  @media only screen and (max-width:1024px) {
+    .add-name{
+        margin-top: 31px;
+       
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .add-name{
+        position: absolute;
+        bottom: 32px;
+        right: 40px;       
+    }
+  }
+  
+  @media only screen and (max-width:375px) {
+    .add-name{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;       
+    }
+  }

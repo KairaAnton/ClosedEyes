@@ -1,0 +1,36 @@
+.App{
+  color: #FFFFFF
+}
+
+._container{
+	max-width:1780px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width:1440px) {
+  ._container{
+    max-width:1330px;
+  }
+  
+}
+
+@media only screen and (max-width:1024px) {
+  ._container{
+    max-width:928px;
+  }
+  
+}
+
+@media only screen and (max-width:992px) {
+  ._container{
+    max-width:687px;
+  }
+  
+}
+
+@media only screen and (max-width:375px) {
+  ._container{
+    max-width:335px;
+  }
+  
+}
